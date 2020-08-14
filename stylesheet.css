@@ -1,0 +1,18 @@
+.table td, .table th{
+
+    padding: 2.75rem;
+}
+
+h2{
+    text-align: center;
+}
+
+.container{
+    margin-top: 60px !important;
+}
+
+p{
+    text-align: center;
+}
+
+
