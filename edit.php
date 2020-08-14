@@ -54,7 +54,7 @@
                 $param_id = trim($_GET["id"]);
 
                 if(mysqli_stmt_execute($statement)){ // execução do statement
-                    header("location:list.php");
+                    header("location:index.php");
                     exit();
                 } else {
                     echo "O produto não pôde ser adicionado.";
@@ -132,7 +132,7 @@
                         <input type = "text" name = "quantity" class = "form-control" value = "<?php echo $quantity; ?>" placeholder = "Quant.">
                     </div>
                     <input type = "submit" class = "btn btn-success" value = "Enviar">
-                    <a class = "btn btn-danger" href='list.php'>Cancelar</a>
+                    <a class = "btn btn-danger" href='index.php'>Cancelar</a>
                 </form>
             </div>
         </div>

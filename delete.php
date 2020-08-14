@@ -9,7 +9,7 @@ if(isset($_GET["id"]) && !empty($_GET["id"])){ // verifica se existe id e se o m
         $param_id = trim($_GET["id"]); // enviando ao banco de dados os id fornecido pelo usuário
 
         if(mysqli_stmt_execute($statement)){
-            header("location:list.php"); // redireciona para lista
+            header("location:index.php"); // redireciona para lista
             exit();
         } else {
             echo "Erro ao deletar o produto";
